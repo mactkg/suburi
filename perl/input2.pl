@@ -1,3 +1,7 @@
-print STDOUT "How many apples do you buy?\n";
-my $num = <STDIN>;
-print STDOUT "You have to pay ". $num*120 ."JPY to buy\n";
+print stdout "how many apples do you buy?\n";
+my $applesNum = <stdin>;
+
+print stdout "how many oranges do you buy?\n";
+my $orangesNum = <stdin>;
+
+print STDOUT "You have to pay ". ($applesNum*120 + $orangesNum*30) ."JPY to buy\n";
